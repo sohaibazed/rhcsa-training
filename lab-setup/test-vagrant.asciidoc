@@ -1,0 +1,50 @@
+== Test vagrant setup
+
+Clone git repo
+```
+MacBook-Pro:~ sazed$ git clone https://github.com/sohaibazed/rhcsa-training.git
+Cloning into 'rhcsa-training'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+```
+
+Go inside the vagrant dir
+```
+MacBook-Pro:~ sazed$  cd rhcsa-training/vagrant/
+```
+
+Run the following command to make sure no vagrant vm is currently running 
+```
+MacBook-Pro:vagrant sazed$ vagrant status
+Current machine states:
+
+machinea                  not created (virtualbox)
+machineb                  not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+```
+
+To create VMs using vagrant, run the following command
+```
+MacBook-Pro:vagrant sazed$ vagrant up
+```
+
+Check the status of the VMs once the `vagrant up` command runs successfully 
+```
+MacBook-Pro:vagrant sazed$ vagrant status
+Current machine states:
+
+machinea                  running (virtualbox)
+machineb                  running (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+```
+
+You can use the `vagrant ssh _machine name_` to ssh inside the VMs. vagrant automatically injects ssh keys inside the VM.
