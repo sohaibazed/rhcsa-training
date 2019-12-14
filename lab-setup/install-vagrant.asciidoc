@@ -1,0 +1,33 @@
+=== For Windows 
+
+Download and install Git
+link:https://git-scm.com/download/win[]
+
+Download and install Virtualbox
+link:http://download.virtualbox.org/virtualbox/5.1.4/VirtualBox-5.1.4-110228-Win.exe[]
+
+Download and install vagrant
+link:https://releases.hashicorp.com/vagrant/1.9.2/vagrant_1.9.2.msi[]
+
+Reference link:https://www.swtestacademy.com/quick-start-vagrant-windows-10/[]
+
+=== For Mac
+Install Git
+```
+$ brew install git
+```
+
+Install Virtualbox 
+```
+$ brew cask install virtualbox
+```
+
+Install Vagrant
+```
+$ brew cask install vagrant
+```
+
+Install vagrant-manager. Vagrant-manager is a utility that allows you to manage all vagrant virtual machines from the menubar
+```
+ brew cask install vagrant-manager
+```
