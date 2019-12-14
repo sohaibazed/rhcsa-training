@@ -48,3 +48,7 @@ VM, run `vagrant status NAME`.
 ```
 
 You can use the `vagrant ssh _machine name_` to ssh inside the VMs. vagrant automatically injects ssh keys inside the VM.
+Once you are done with the lab, you can use the following command to destroy it and free resources
+```
+MacBook-Pro:lab-setup sazed$ vagrant destroy -f
+```
